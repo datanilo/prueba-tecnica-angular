@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+    ports:
+      - "4200:4200"  # Puerto de la aplicación Angular
+      - "3000:3000"  # Puerto del servidor Node.js
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./server/.env:/app/server/.env:ro
+    restart: unless-stopped 
