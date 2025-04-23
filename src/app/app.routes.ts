@@ -10,9 +10,9 @@ import { authGuard } from './guards/auth.guard';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'search', component: SearchComponent, canActivate: [authGuard] },
-  { path: 'artist/:id', component: ArtistDetailComponent, canActivate: [authGuard] },
-  { path: 'album/:id', component: AlbumDetailComponent, canActivate: [authGuard] },
+  { path: 'search', component: SearchComponent },
+  { path: 'artist/:id', component: ArtistDetailComponent },
+  { path: 'album/:id', component: AlbumDetailComponent },
   { path: 'playlists', component: PlaylistsComponent, canActivate: [authGuard] },
   { path: 'playlist/:id', component: PlaylistDetailComponent, canActivate: [authGuard] },
   { path: 'auth/callback', component: AuthCallbackComponent },
