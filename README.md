@@ -30,8 +30,8 @@ Este proyecto es una aplicación de búsqueda de música desarrollada con Angula
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/spotify-clone.git
-cd spotify-clone
+git clone https://github.com/datanilo/prueba-tecnica-angular.git
+cd prueba-tecnica-angular
 ```
 
 ### 2. Instalar dependencias del frontend
