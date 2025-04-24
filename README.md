@@ -50,9 +50,9 @@ cd ..
 
 ### 4. Configurar credenciales de Spotify
 
-1. Ve a [Spotify for Developers](https://developer.spotify.com/dashboard/)
+1. Ve a [Spotify for Developers](https://developer.spotify.com/)
 2. Inicia sesión y crea una nueva aplicación
-3. Configura la URL de redirección: `http://localhost:4200/auth/callback`
+3. Configura la URL de redirección: `http://127.0.0.1:4200/api/auth/callback`
 4. Copia el Client ID y Client Secret
 
 ### 5. Configurar variables de entorno
@@ -66,7 +66,7 @@ PORT=4000
 # Credenciales de Spotify
 SPOTIFY_CLIENT_ID=tu_client_id_de_spotify
 SPOTIFY_CLIENT_SECRET=tu_client_secret_de_spotify
-SPOTIFY_REDIRECT_URI=http://localhost:4200/auth/callback
+SPOTIFY_REDIRECT_URI=http://127.0.0.1:4200/api/auth/callback
 
 # Secreto JWT
 JWT_SECRET=tu_clave_secreta_para_los_tokens
@@ -95,7 +95,7 @@ npm start
 npm run server
 ```
 
-El frontend estará disponible en `http://localhost:4200` y el backend en `http://localhost:4000`.
+El frontend estará disponible en `http://127.0.0.1:4200` y el backend en `http://127.0.0.1:4000`.
 
 ### B. Modo Docker
 
